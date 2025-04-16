@@ -1,0 +1,41 @@
+# ict112-pop
+
+#Question 1:
+
+string = "Programming"
+reversed_string = string[::-1]
+print(reversed_string)
+
+
+#Question 2: 
+
+full_name = input("Enter your full name: ")
+initials = ".".join(name[0].upper() for name in full_name.split())
+print(f"{initials}.")
+
+
+#Question 3:
+
+def is_palindrome(s):
+    return s == s[::-1]
+string = input("Enter a string: ")
+if is_palindrome(string):
+    print("The string is a palindrome.")
+else:
+    print("The string is not a palindrome.")
+
+
+#Question 4:
+
+sentence = input("Enter a sentence: ")
+word_count = len(sentence.split())
+print(f"The sentence has {word_count} words.")
+
+
+
+#Question 5:
+
+string = "This is a string and it is an example."
+modified_string = string.replace("is", "was")
+print(modified_string)
+
